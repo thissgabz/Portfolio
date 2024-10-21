@@ -11,11 +11,15 @@
         href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
         rel="stylesheet"
     />
+
+    <!-- Animate -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     
     <title>Portfolio</title>
 </head>
 <body>
     <header id="header" class="header container">
+        <!-- <img src="./assets/WhatsApp_Image_2024-04-25_at_16.30.37_fd683bdd-removebg-preview.png" alt="" srcset=""> -->
         <nav id="navbar">
             <div class="logo">
                 <img src="./assets/Hidden-Layer-Style--Streamline-Flex.png" alt="" srcset="">
@@ -33,9 +37,7 @@
 
         <div id="hero">
             <div class="intro"> 
-                <img src="./assets/WhatsApp_Image_2024-04-25_at_16.30.37_fd683bdd-removebg-preview.png" alt="" srcset="">
-
-
+               
                 <div class="name">
                     <h1>Okeke <br /> Emmanuel.</h1>
                 </div>
@@ -71,14 +73,146 @@
     </header>
 
     <section id="contact">
-        <div class="con container">
+        <div class="container">
+        <div class="firstcon">
+        <div class="con">
             <p class="thin">- Contact</p>
             <div class="query">
-                Any type of Query &
+                <h3>Any type of Query & <br /> Discussion.</h3>
+            </div>
+
+            <div class="queryco thin">
+                something something
+            </div>
+
+            <div class="mail thin">
+                <a href="">gabokekeemmanuel@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="creative">
+            <h3>You can't use up creativity, the more you use, <br /> the more you have in your significant mind</h3>
+            <div class="creativeother thin">
+                something something
+            </div>
+            <div class="experience">
+                <div class="years">
+                <h1>1+</h1>
+                <p class="thin">Years of <br /> Experience</p>
+                </div>
+                <div class="clients">
+                <h1>2</h1>
+                <p class="thin">Satisfied <br /> Clients</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="boxes">
+            <div class="html">
+                <div class="upcase">
+                <i class="ri-html5-line"></i>
+                <div class="case">
+                    <h3>HTML & CSS</h3>
+                    <p class="thin">14 Projects</p>   
+                </div>
+                </div>
+            </div>
+
+            <div class="javas">
+                <div class="upcase">
+                <i class="ri-javascript-line"></i>
+                <div class="case">
+                <h3>Javascript</h3>
+                <p class="thin">9 Projects</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="react">
+                <div class="upcase">
+                <i class="ri-reactjs-line"></i>
+                <div class="case">
+                <h3>React <br /> Framework</h3>
+                <p class="thin">1 Project</p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="jobs container">
+        <div class="con">
+            <p class="thin">- Portfolio</p>
+            <div class="query">
+                <h3>All Creative Works, <br /> Selected Projects</h3>
+            </div>
+
+            <div class="queryco thin">
+                something something
+            </div>
+
+            <div class="mail thin">
+                <a href="">Explore more</a>
+            </div>
+        </div>
+
+        <div class="screen">
+           <img src="./assets/Screenshot 2024-10-18 160950.png" alt="">
+        </div>
+    </section>
+
+    <section class="more">
+        <div class="firstpro">
+        <div class="project">
+            <h3>Got a Project? <br /> Let's talk</h3>
+            <p class="thin">something something</p>
+        </div>
+        <div class="mail">
+            <a href="">gabokekeemmanuel@gmail.com</a>
+        </div>
+        </div>
+
+        <div class="secondpro">
+            <h3>Estimate a Project? <br /> Let me know here.</h3>
+            <div class="details">
+                <p>What's your name?</p>
+                <p>Your email?</p>
+                <p>Tell me about your project</p>
             </div>
         </div>
     </section>
 
+    <div class="section">
+        <img src="./assets/png-transparent-logo-contracting-photography-logo-symbol-removebg-preview.png" alt="">
+        <p>Thanks for scrolling</p>
+        <div class="links">
+            <a href=""><i class="ri-github-fill"></i></a>
+            <a href=""><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-linkedin-fill"></i></a>
+
+        </div>
+    </div>
+
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      ScrollReveal({
+            reset: true, 
+            // distance: '50px',
+            duration: 2000,
+            delay: 400
+      });
+      
+      ScrollReveal().reveal('.name', { delay: 100, origin: 'right', distance: "50px"});
+      ScrollReveal().reveal('.line', { delay: 100, origin: 'left', distance: "50px"});
+      ScrollReveal().reveal('.links a', { delay: 300, origin: 'bottom', interval: 200, distance: "30px"});
+      ScrollReveal().reveal('.introh', { delay: 300, origin: 'right', distance: "50px"});
+      ScrollReveal().reveal('.introexplain', { delay: 300, origin: 'right', distance: "50px"});
+      ScrollReveal().reveal('.resume', { delay: 300, origin: 'right', distance: "50px"});
+      ScrollReveal().reveal('.introbody', { delay: 300, origin: 'left', distance: "20px"});
+    </script>
 </body>
 </html>

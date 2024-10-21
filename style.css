@@ -10,7 +10,8 @@
     --colour-primary: rgb(16, 16, 196);
     --colour-primary-light: rgba(49, 28, 242, 0.12);
     --colour-success: #29f5a6;
-    --colour-warning: #f6bf6e;
+    --colour-warning: #ffae35;
+    --colour-warn: #f6a328;
     --colour-off: #5f6170;
 
     --medium: 500;
@@ -60,15 +61,15 @@
   }
   
   h1 {
-    font-size: 3.8rem;
+    font-size: 2.5rem;
   }
   
   h2 {
-    font-size: 2.6rem;
+    font-size: 1.7rem;
   }
   
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   
   h4 {
@@ -81,6 +82,7 @@
   
   p {
     line-height: 1.5;
+    /* font-size: 20px; */
   }
   
   i {
@@ -94,8 +96,6 @@
   
   section {
     padding: 7rem 0 7rem 0;
-    max-width: 100vw;
-    overflow-x: hidden;
   }
   
   .cpad {
@@ -131,15 +131,20 @@
   /* HEADER */
 
   #header {
-    margin-bottom: 7rem;
+    padding-bottom: 7rem;
     overflow: hidden;
+    position: relative;
     /* z-index: 999; */
   }
 
-  #hero img {
+  #header > img {
     position: absolute;
-    /* width: 40%; */
-    left: 40rem;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    left: 0;
+    top: 0;
     overflow: hidden;
     z-index: -1;
     align-self: center;
@@ -178,7 +183,6 @@
 
   .navitems li a {
     color: var(--colour-off);
-
   }
 
   #hero {
@@ -228,7 +232,130 @@
 
   /* HEADER */
 
+  /* SECTION 1 */
+
   #contact {
     background-color: var(--colour-black);
     z-index: 1000;
+    position: relative;
   }
+
+  .firstcon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .con {
+    display: grid;
+    width: 30%;
+    height: 0;
+    gap: .5rem;
+  }
+
+  .con .query {
+    margin-bottom:  1.5rem;
+  }
+
+  .con .queryco {
+    margin-bottom: 3rem;
+  }
+
+  .mail a{
+    color: var(--colour-warning);
+    font-weight: 600;
+  }
+
+  .creative {
+    width: 50%;
+    display: grid;
+    gap: 2rem;
+  }
+
+  .experience {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+  }
+
+  .experience p {
+    font-size: 15px;
+  }
+
+  .experience .years {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 40%;
+  }    
+
+  .experience h1{
+    color: var(--colour-warning);
+    font-weight: 800;
+  }
+
+  .experience .clients {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 40%;
+  }
+
+  .boxes {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: -5rem;
+    align-items: center;
+    width: 70%;
+  }
+
+  .boxes .html,
+  .javas,
+  .react {
+    width: 30%;
+    height: 250px;
+    align-items: flex-end;
+    align-self: center;
+    display: flex;
+    padding: 0 2rem 2rem 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .javas,
+  .react {
+    background-color: var(--colour-dark);
+  }
+
+  .html  {
+    background:var(--colour-warning);
+  }
+
+  .boxes i {
+    font-size: 40px;
+    align-self: center;
+  }
+
+  .upcase  {
+    display: flex;
+    gap: 2rem;
+  }
+  /* SECTION 1 */
+
+  /* SECTION II */
+  .jobs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .screen img {
+    width: 500px;
+    padding-top: 2rem;
+  }
+
+  .screen {
+    width: 50%;
+  }
+
+  /* SECTION II */

@@ -15,6 +15,12 @@
     <!-- Animate -->
     <script src="https://unpkg.com/scrollreveal"></script>
     
+    <!-- Swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+
     <title>Portfolio</title>
 </head>
 <body>
@@ -27,9 +33,27 @@
 
             <div class="navmenu">
                 <ul class="navitems">
+                    <li class="navoff"><a href="#Services">Services</a></li>
+                    <li class="navoff"><a href="#Works">Works</a></li>
+                    <li class="navoff"><a href="#Blog">Blog</a></li>
+                    <li><p>WELCOME</p></li>
+                    <div id="nav-close">
+                        <i class="ri-close-fill"></i>
+                        </div>
+                    </div> 
+        
+                    <div id="menu">
+                        <i class="ri-menu-4-line"></i>
+                    </div>
+                </ul>
+
+                <ul class="sideitems">
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#Works">Works</a></li>
                     <li><a href="#Blog">Blog</a></li>
+                    <div class="otherbtn">
+                        <a href="">My Resume</a>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -82,7 +106,8 @@
             </div>
 
             <div class="queryco thin">
-                something something
+              Any type of discussion is welcome! I’m always eager to connect and collaborate.
+              Feel free to reach out using the email below. Let’s start a conversation!
             </div>
 
             <div class="mail thin">
@@ -91,9 +116,12 @@
         </div>
 
         <div class="creative">
-            <h3>You can't use up creativity, the more you use, <br /> the more you have in your significant mind</h3>
+            <h3>You can't use up creativity, the more you use, the more you have in your significant mind</h3>
             <div class="creativeother thin">
-                something something
+                Each project is an opportunity to explore new ideas and 
+                expand my creative horizons, resulting in unique and impactful designs. 
+                I believe that creativity thrives through collaboration and exploration, 
+                leading to exceptional results that resonate with audiences.
             </div>
             <div class="experience">
                 <div class="years">
@@ -151,7 +179,10 @@
             </div>
 
             <div class="queryco thin">
-                something something
+                A curated selection of my creative projects showcases expertise in
+                web design, and illustration. Each piece reflects 
+                my commitment to transforming concepts into compelling visual narratives. 
+                Explore the work to see my professional approach to creativity.
             </div>
 
             <div class="mail thin">
@@ -164,11 +195,61 @@
         </div>
     </section>
 
-    <section class="more">
+    <div id="review">
+        <div class="revtit thin">
+            <p>- Reviews</p>
+        </div>
+       
+    <div class="reviews container">
+        <div class="card">
+            <div class="content">
+                <img src="./assets/Bole-removebg-preview.png" alt="" srcset="">
+                <h3>Bole Festival</h3>
+                <p class="thin">"Emmanuel created a stunning e-commerce site, 
+                                 Customer service was helpful. 
+                    Overall, decent experience."
+                </p>
+                <div class="read">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="content">
+                <img src="./assets/attachment_43805737-e1494006955649-removebg-preview.png" alt="" srcset="">
+                <h3>Ala Confectionery</h3>
+                <p class="thin">"Emmanuel transformed my bakery’s website beautifully! 
+                    Professional, attentive, and easy to work with"
+                </p>
+                <div class="read">
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card off">
+            <div class="content">
+                <img src="./assets/png-transparent-logo-contracting-photography-logo-symbol-removebg-preview.png" alt="" srcset="">
+                <h3>Screll</h3>
+                <p class="thin">"Emmanuel revamped our nonprofit site effectively. 
+                    Great design and communication. 
+                    The final product is worth it!"</p>
+                <div class="read">
+                <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="more container">
         <div class="firstpro">
         <div class="project">
-            <h3>Got a Project? <br /> Let's talk</h3>
-            <p class="thin">something something</p>
+            <h3>Got a Project? <br /> Let's talk.</h3>
+            <p class="thin">If you have a project to discuss, 
+                I invite you to schedule an appointment via the email below. 
+                I look forward to the opportunity to collaborate and help bring your vision to life.</p>
         </div>
         <div class="mail">
             <a href="">gabokekeemmanuel@gmail.com</a>
@@ -178,21 +259,26 @@
         <div class="secondpro">
             <h3>Estimate a Project? <br /> Let me know here.</h3>
             <div class="details">
-                <p>What's your name?</p>
-                <p>Your email?</p>
-                <p>Tell me about your project</p>
+                <div class="lines">
+                    <p class="thin"><a href="">What is your name?</a></p>
+                </div>
+                <div class="lines">
+                    <p class="thin"><a href="">Your email?</a></p>
+                </div>
+                <div>
+                    <p class="thin"><a href="">Tell me about your project</a></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="section">
-        <img src="./assets/png-transparent-logo-contracting-photography-logo-symbol-removebg-preview.png" alt="">
-        <p>Thanks for scrolling</p>
+    <div class="endon container">
+        <img src="./assets/Hidden-Layer-Style--Streamline-Flex.png" alt="">
+        <p class="thin">Thanks for scrolling</p>
         <div class="links">
             <a href=""><i class="ri-github-fill"></i></a>
             <a href=""><i class="ri-instagram-line"></i></a>
             <a href=""><i class="ri-linkedin-fill"></i></a>
-
         </div>
     </div>
 
@@ -213,6 +299,11 @@
       ScrollReveal().reveal('.introexplain', { delay: 300, origin: 'right', distance: "50px"});
       ScrollReveal().reveal('.resume', { delay: 300, origin: 'right', distance: "50px"});
       ScrollReveal().reveal('.introbody', { delay: 300, origin: 'left', distance: "20px"});
+      ScrollReveal().reveal('.firstcon', { delay: 200, origin: 'bottom', distance: "20px"});
+      ScrollReveal().reveal('.boxes', { delay: 200, origin: 'left', distance: "20px"});
+      ScrollReveal().reveal('.query', { delay: 300, origin: 'right', distance: "20px"});
+      ScrollReveal().reveal('.queryco', { delay: 300, origin: 'top', distance: "20px"});
+      ScrollReveal().reveal('.screen', { delay: 300, origin: 'bottom', distance: "20px"});
     </script>
 </body>
 </html>
